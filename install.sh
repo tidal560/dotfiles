@@ -1,5 +1,7 @@
-# Instal stow
-sudo apt install stow
+# Install dependencies
+sudo apt install python3-venv   # Required for pylsp
+sudo apt install unzip          # Required for clang lsp
+sudo apt install stow           # Required for symlinks
 stow .
 
 # Install tmux

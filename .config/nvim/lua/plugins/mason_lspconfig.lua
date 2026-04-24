@@ -1,4 +1,4 @@
-return{
+return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
         ensure_installed = {
@@ -15,11 +15,21 @@ return{
                     icons = {
                         package_installed = "✓",
                         package_pending = "➜",
-                        package_uninstalled = "✗"
-                    }
+                        package_uninstalled = "✗",
+                    },
                 },
             },
         },
         "neovim/nvim-lspconfig",
+        {
+            "WhoIsSethDaniel/mason-tool-installer.nvim",
+            opts = {
+                ensure_installed = {
+                    "stylua",
+                    "black",
+                    "clang-format",
+                },
+            },
+        },
     },
 }

@@ -1,4 +1,3 @@
-
 autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
@@ -18,3 +17,9 @@ RPROMPT='%F{blue}%*%f'
 alias ll="ls -la"
 
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY

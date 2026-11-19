@@ -3,6 +3,7 @@ sudo apt install python3-venv   # Required for pylsp
 sudo apt install ripgrep        # Required for telescope grep
 sudo apt install unzip          # Required for clang lsp
 sudo apt install stow           # Required for symlinks
+sudo apt install lazygit        # Required for lazygit nvim plugin
 stow .
 
 # Install tmux
